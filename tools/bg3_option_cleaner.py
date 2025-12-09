@@ -6,7 +6,7 @@ from collections import OrderedDict
 
 def spell_list():
     ## Read list in
-    spell_list_raw = pd.read_excel('../raw/bg3_spells_raw.xlsx')
+    spell_list_raw = pd.read_excel('../lists/bg3_spells_raw.xlsx')
 
     ## Clean the duplicates from wikipasting
     spell_list_raw['Name'] = spell_list_raw['Name'].astype(str).apply(
@@ -28,7 +28,7 @@ def spell_list():
 
 def misc_list():
     ## Read list in
-    misc_list_raw = pd.read_excel('../raw/misc_choice_list_raw.xlsx')
+    misc_list_raw = pd.read_excel('../lists/misc_choice_list_raw.xlsx')
 
     ## Clean the duplicates from wikipasting
     misc_list_raw['Choice'] = misc_list_raw['Choice'].astype(str).apply(
@@ -42,3 +42,4 @@ def misc_list():
     misc_list_agg['Choice'] = [list(x) for x in misc_list_agg['Choice']]
     
     misc_list_agg.to_excel('../lists/bg3_choice_list_clean.xlsx', sheet_name='Sheet1', index=True)
+
