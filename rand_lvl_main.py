@@ -3,6 +3,10 @@ To do:
 * Fighter - Warlock
 
 * Add in gods
+
+* Rerun option cleaner
+
+* Add in third caster function
 '''
 import pandas as pd
 
@@ -516,17 +520,18 @@ class randomize_char:
     def get_class_features(self,featured_class,lvl):
 
         random_features = []
+        subclass = self.class_info.loc[featured_class,'Subclass']
         ## ASI/feat
         if (lvl in [4,8,12]) or ((featured_class == 'Fighter') & (lvl == 6)) or ((featured_class == 'Rogue') & (lvl == 10)):
             random_features.append(self.select_feat_opt(source=(f'Level {lvl} {featured_class}')))
         
         ## Barbarian class options
         if featured_class == 'Barbarian':
-            if (lvl in [1,2,4,5,7,8,9,11,12]) or (self.class_info.loc['Barbarian','Subclass'] != 'Wildheart' & (lvl in [6,10])):
+            if (lvl in [1,2,4,5,7,8,9,11,12]) or (subclass != 'Wildheart' & (lvl in [6,10])):
                 random_features.append('No other random features')
             elif lvl == 3:
-                random_features.append([f"Subclass: {self.class_info.loc['Barbarian','Subclass']}"])
-                if self.class_info.loc['Barbarian','Subclass'] == 'Wildheart':
+                random_features.append([f"Subclass: {subclass}"])
+                if subclass == 'Wildheart':
                     random_features.append([f"Beastial Heart: {random.choice(['Bear','Eagle','Elk','Tiger','Wolf'])}"])
                     self.available_aspects = RANDOM_FEATURES.loc[RANDOM_FEATURES['Feature'] == 'Aspects of the Beast','Choice'].explode()
                     self.character_aspects = []
@@ -558,18 +563,18 @@ class randomize_char:
                 random_features.append(self.full_caster_progression('Bard',lvl,4))
 
             elif lvl == 3:
-                random_features.append([f"Subclass: {self.class_info.loc['Bard','Subclass']}"])
+                random_features.append([f"Subclass: {subclass}"])
                 random_features.append(f"Expertise: {self.add_expertise(self.character_skills)}")
-                if self.class_info.loc['Bard','Subclass'] == 'Swords':
+                if subclass == 'Swords':
                     fs = random.choice(['Dueling','Two-Weapon Fighting'])   
                     random_features.append([f"Fighting Style: {fs}"])
                     self.add_to_char(self.available_fighting,self.character_fightning,fs)
-                elif self.class_info.loc['Bard','Subclass'] == 'Lore':
+                elif subclass == 'Lore':
                     lore_skills = random.choice(self.available_skills,3,replace=False)
                     self.add_to_char(self.available_skills,self.character_skills,lore_skills)
                     random_features.append(f"Bonus Skills: {lore_skills}")
                         
-            elif lvl == 10 or (self.class_info.loc['Bard','Subclass'] == 'Lore' & (lvl == 6)):
+            elif lvl == 10 or (subclass == 'Lore' & (lvl == 6)):
                 ## Not as easy to copy from bg3.wiki unfortunetly
                 magical_secrets = ['Bone Chill','Fire Bolt','Sacred Flame','Eldritch Blast','Ray of Frost',
                                 'Armor of Agathys','Bless','Guiding Bolt','Magic Missle','Chromatic Orb', 'Hellish Rebuke','Sanctuary','Command','Hex','Thunderous Smite','Entangle',"Hunter's Mark",
@@ -594,7 +599,7 @@ class randomize_char:
         elif featured_class == 'Cleric':
             if lvl == 1:
                 ## Subclass and God
-                random_features.append(f"Subclass: {self.class_info.loc['Cleric','Subclass']}")
+                random_features.append(f"Subclass: {subclass}")
 
                 ## Intersection of available skills
                 available_class_skills = list(set(self.available_skills) & set(self.class_info.loc['Cleric','Starting Skills']))
@@ -607,7 +612,7 @@ class randomize_char:
                 ## Add cantrips to character sheet
                 random_features.append(self.full_caster_progression('Cleric',lvl,0))
 
-                if self.class_info.loc['Cleric','Subclass'] == 'Knowledge':
+                if subclass == 'Knowledge':
                     
                     knowledge_expertise = random.choice(['Arcana','Religion','Nature','History'],2)
                     
@@ -618,7 +623,7 @@ class randomize_char:
                     self.add_expertise(knowledge_expertise)
                     random_features.append([f"Knowledge Expertise: {knowledge_expertise}"])
                 
-                elif self.class_info.loc['Cleric','Subclass'] == 'Nature':
+                elif subclass == 'Nature':
                     
                     nature_cantrip = random.choice(['Poison Spray','Produce Flame','Shillelagh','Thorn Whip'])
                     random_features.append([f"Bonus Nature Cantrip: {nature_cantrip}"])
@@ -641,16 +646,16 @@ class randomize_char:
                 random_features.append(self.full_caster_progression('Druid',lvl,0))
 
             elif lvl == 2:
-                random_features.append([f"Subclass: {self.class_info.loc['Druid','Subclass']}"])
+                random_features.append([f"Subclass: {subclass}"])
 
-                if self.class_info.loc['Druid','Subclass'] == 'Land':
+                if subclass == 'Land':
                     bonus_cantrip = random.choice(self.available_cantrips['Druid'])
                     random_features.append([f"Bonus Cantrip: {self.starting_cantrips}"])
 
                     self.add_to_char(self.available_cantrips['Druid'],self.character_cantrips['Druid'],bonus_cantrip)
 
 
-            elif ((lvl in [3,4,5,7,9]) & (self.class_info.loc['Druid','Subclass'] == 'Land')):
+            elif ((lvl in [3,4,5,7,9]) & (subclass == 'Land')):
                 lands = RANDOM_FEATURES.loc[RANDOM_FEATURES['Feature'] == 'Circle Land','Choice']
 
                 random_features.append([f"Land Choice: {random.choice(lands)}"])
@@ -662,16 +667,89 @@ class randomize_char:
                 random_features.append("No other random features, since prepared spells are swapped whenever")
 
         ## Fighter Class Options
+        elif featured_class == 'Fighter':
+
+            if lvl == 1:
+                fs_choice = random.choice(self.available_fighting)
+
+                self.add_to_char(self.available_fighting,self.character_fightning,fs_choice)
+                random_features.append(f'Fighting stlye: {fs_choice}')
+            elif lvl in [2,5,9] or ((lvl == 11) & (subclass != 'Eldritch Knight')):
+                random_features.append("No other random features")
+            
+            ## Subclass options:
+            elif subclass == 'Arcane Archer':
+                self.available_shots = RANDOM_FEATURES.loc[RANDOM_FEATURES['Feature'] == 'Arcane Shot','Choice'].explode()
+                self.character_shots = []
+                if lvl == 3:
+                    random_features.append([f"Subclass: {subclass}"])
+
+                    ## Cantrip
+                    bonus_cantrip = random.choice(['Guidance','Light','True Strike'])
+                    random_features.append([f"Bonus Cantrip: {bonus_cantrip}"])
+
+                    ## Skills
+                    try:
+                        self.add_to_char(self.available_skills,self.character_skills,'Arcana')
+                    except: 
+                        e = 1 ## They may already have arcana
+                    try:
+                        self.add_to_char(self.available_skills,self.character_skills,'Nature')
+                    except: 
+                        e = 1 ## They may already have nature
+                    
+                    ## Shots
+                    choice_shots = random.choice(self.available_shots,3,replace=False)
+                    self.add_to_char(self.available_shots,self.character_shots,choice_shots)
+                    random_features.append([f"Arcane Shots: {choice_shots}"])
+                elif lvl in [7,10]:
+                    choice_shot = random.choice(self.available_shots)
+                    self.add_to_char(self.available_shots,self.character_shots,choice_shot)
+                    random_features.append([f"Arcane Shot: {choice_shot}"])
+
+            elif subclass == 'Battle Master':
+                if lvl == 3:
+                    random_features.append([f"Subclass: {subclass}"])
+
+                    choice_manoeuvres = random.choice(self.available_manoeuvres,3,replace=False)
+                    self.add_to_char(self.available_manoeuvres,self.character_manoeuvres,choice_manoeuvres)
+
+                    random_features.append([f"Manoeuvres: {choice_manoeuvres}"])
+                elif lvl in [7,10]:
+                    choice_manoeuvres = random.choice(self.available_manoeuvres,2,replace=False)
+                    self.add_to_char(self.available_manoeuvres,self.character_manoeuvres,choice_manoeuvres)
+
+                    random_features.append([f"Manoeuvres: {choice_manoeuvres}"])
+
+            elif subclass == 'Champion':
+                if lvl == 3:
+                    random_features.append([f"Subclass: {subclass}"])
+                elif lvl == 7:
+                    random_features.append("No other random features")
+                elif lvl == 10:
+                    fs_choice = random.choice(self.available_fighting)
+
+                    self.add_to_char(self.available_fighting,self.character_fightning,fs_choice)
+                    random_features.append(f'Fighting stlye: {fs_choice}')
+
+            elif subclass == 'Eldritch Knight':
+                if lvl == 3:
+                    random_features.append([f"Subclass: {subclass}"])
+
+                    ## Spells
+
+
 
         ## Monk Class Options
 
         ## Paladin Class Options
         elif featured_class == 'Paladin':
-            if lvl == '1':
-                random_features.append([f"Subclass: {self.class_info.loc['Paladin','Subclass']}"])
+            if lvl == 1:
+                random_features.append([f"Subclass: {subclass}"])
+                
             
             else:
-                if lvl == '2':
+                if lvl == 2:
                     ## Cross section of available fighting styles:
                     available_pally = list(set(self.available_fighting) & set(['Defence','Dueling','Great Weapon Fighting','Protection']))
                     fs_choice = random.choice(available_pally)
@@ -700,8 +778,8 @@ class randomize_char:
                 s = 2
         
             if lvl == 2:
-                random_features.append([f"Subclass: {self.class_info.loc['Wizard','Subclass']}"])
-            elif ((lvl == 5) & (self.class_info.loc['Wizard','Subclass'] == 'Necromancy')):
+                random_features.append(f"Subclass: {subclass}")
+            elif ((lvl == 5) & (subclass == 'Necromancy')):
                 try:
                     self.add_to_char(self.available_spells['Wizard'],self.character_spells['Wizard'],'Animate Dead')
                 except:
