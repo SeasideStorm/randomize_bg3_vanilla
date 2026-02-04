@@ -2,10 +2,6 @@
 To do: 
 * Fighter - Warlock
 
-* Add in gods
-
-* Rerun option cleaner
-
 * Add in third caster function
 '''
 import pandas as pd
@@ -23,7 +19,7 @@ class randomize_char:
         filled.
         '''
         ## Character Sheet
-        self.character_sheet = pd.DataFrame(index = ['Race','Background','Abilities','Starting Skills'] + [f'Level {i}' for i in range(1,13)]
+        self.character_sheet = pd.DataFrame(index = ['Race','Background','Optional','Abilities','Starting Skills'] + [f'Level {i}' for i in range(1,13)]
                                     ,columns=['Selection','Random Features'])
         
         ## Ability Scores
@@ -282,10 +278,7 @@ class randomize_char:
         self.add_to_char(self.available_skills,self.character_skills,skill_one)
         self.add_to_char(self.available_skills,self.character_skills,skill_two)
 
-        ## Chose Roleplay Options:
-        randfeatures = f'God (Optional): {random.choice(GODS)}, Alignment (Optional): {random.choice(ALIGNMENTS)}'
-
-        return([background,randfeatures])
+        return([background,'No other random features'])
 
     def gen_race(self):
         print("Randomizing Race...")
@@ -298,7 +291,7 @@ class randomize_char:
         race_options = [
             f'Human',
             random.choice([f'High Elf','Wood Elf']),
-            'Drow',
+            random.choice([f'Lolth-sworn Drow','Seldarine Drow']),
             random.choice([f'High Half-Elf','Wood Half-Elf','Drow Half-Elf']),
             'Half-Orc',
             random.choice(['Lightfoot Halfling','Strongheart Halfling']),
@@ -327,7 +320,27 @@ class randomize_char:
         elif race == 'Deep Gnome':
             self.add_to_char(self.available_skills,self.character_skills,'History')
 
+        self.race = race
         return([race,'No other random features'])
+
+    def gen_optional(self):
+        alignment = random.choice(ALIGNMENTS)
+
+        ## Alignment agnositc, since niether really matter
+        if self.race == 'Lolth-sworn Drow':
+            god_choices = 'Lolth'
+        elif self.race == 'Seldarine Drow':
+            god_choices = GODS.remove('Lolth')
+        elif self.race == 'Githyanki':
+            god_choices = GODS.append('Vlaakith')
+        elif self.race == 'Duegar':
+            god_choices = GODS.append('Laduguer')
+        else:
+            god_choices = GODS
+        
+        god = random.choice(god_choices)
+
+        return([f'God: {god}, Alignment: {alignment}', 'No other random features'])
 
     def gen_scores(self):
         print("Randomizing Scores...")
@@ -433,6 +446,8 @@ class randomize_char:
 
         self.character_sheet.loc['Background'] = self.gen_background()
         self.character_sheet.loc['Race'] = self.gen_race()
+        self.character_sheet.loc['Optional'] = self.gen_optional()
+
         self.character_sheet.loc['Abilities'] = self.gen_scores()
 
         self.build_all_classes()

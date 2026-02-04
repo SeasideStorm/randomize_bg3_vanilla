@@ -42,7 +42,9 @@ FEATS = ['Alert','Actor','Athlete','Charger','Crossbow Expert','Defensive Duelis
 
 FIGHTING_STYLES = ['Archery','Defense','Dueling','Great Weapon Fighting','Protection','Two-Weapon Fighting']
 
-GODS = []
+GODS = ['Bahamut', 'Corellon Larethian','Eilistraee', 'Garl Glittergold', 'Gruumsh','Helm','Ilmater',
+        'Kelemvor', 'Lathander','Lolth','Mielikki','Moradin','Mystra','Oghma','Selune','Talos','Tempus',
+        'Tiamat','Tymora','Tyr','Yondalla']
 
 POINT_COST = pd.DataFrame(data = [[0,0],[1,1],[2,2],[3,3],[4,4],[5,5],[6,7],[7,9]], columns= ['Increase','Cost'])
 

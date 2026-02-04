@@ -12,7 +12,7 @@ One of the things I love about Baldur's Gate 3 is just how many options there ar
 Everything you need is in the .zip release, which includes the .exe to run. All you need to do in unzip the file into a folder of your choice, though I would recomend against keeping this in downloads. Documents is a decent place for it, or you can even put it next to your BG3 folder if you want. Just note that wherever the application is, that is where your character sheet will go. The prompts will all be done through the terminal, but that is just the interface this program uses and won't do anything to your computer. You need no coding experience to work with this, just a keyboard and mouse!
 
 # Usage
-Once installed, the program can be run with a simple double click in file explorer. This will open up the terminal (os agnostic) and start the randomization. D
+Once installed, the program can be run with a simple double click in file explorer. This will open up the terminal (os agnostic) and start the randomization.
 
 ## User Inputs
 During the randomization, there will several keyboard inputs to help determine the way the randomization is handled. Inputs are not case-sensitive.
@@ -87,6 +87,11 @@ stats. If you get a duplicate you don't want, you can either keep it for an extr
 
 ## Mods
 Unsurprisingly, this is only built to handle the base game (as of Patch 8), unless you count mods that add the option to select a deity with any class since that is a 'flavor' option this code can generate along with alignment. Any mods that add classes, subclasses, spells, feats, new deities, etc. would not be natively supported. That being said, modded subclasses, deities, and feat can easily be added by adding them to their respective list in constants -- however this will only add the name, and not any other options that may come from said subclass. Similarly, new spells can be added to the 'raw' list, and then 'bg3_option_cleaner.py' can be run. If you do not have the ability to do that, reach out to me via Discord or Reddit with the new constants and I will do my best to get you a modded version.
+
+# Coding Etiqutte: Why 'If'?
+Any coder that looks at the base file may be horrified to see that this whole thing is built on If/Else conditional statements, so I would like to explain why I have done so. For something like this a lookup table would likely be best, with all classes and level initialized randomly at the start then use the difficulty selection to cut that down to the proper subset and call each column/row to fill out the character sheet. The reason why this can't be, or at least wasn't, done is due to multiple similar features needing to know what comes before them to make an educated desicion. 
+
+Take expertise as an example. It can only choose from the current skills proficiency list, and can only select those that don't have expertise. Without using if/else, I could not figure out a way that would allow expertise to pick from the proper selection of available skills and thus needed to be done iteratively. If there are other suggestions that can improve the readability and functionality of the code I am more than happy to hear them! This just seemed like the best way to handle the complexity of choices in a game like BG3. 
 
 # Editing
 This is in a very rough state, and likely still has a lot of bugs that would be impossible (or at the very least impractical) for me to catch on my own. As such, if you have the skills to do so! Just make a branch on this repository with any edits and create a pull request that I will approve. There is also the future improvements list down below if you have the time and want to help out!
