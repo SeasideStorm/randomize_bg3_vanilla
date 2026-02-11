@@ -36,7 +36,7 @@ class randomize_char:
         self.character_feats = []
 
         ## Spells Cataloging
-        self.available_spells = SPELL_LIST.loc[:,1]
+        self.available_spells = SPELL_LIST.loc[:,"1"]
         self.character_spells = pd.Series(index = SPELL_LIST.index)
 
         ## Cantrips Cataloging
@@ -63,7 +63,7 @@ class randomize_char:
         '''
         The SPELL_LIST needs to be accessed enough where this is useful
         '''
-        spell_list = SPELL_LIST.loc[spellclass,lvl]
+        spell_list = SPELL_LIST.loc[spellclass,f"{lvl}"]
         return(spell_list)
 
     def add_expertise(self,options):

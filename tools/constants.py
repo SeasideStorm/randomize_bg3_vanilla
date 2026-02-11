@@ -4,6 +4,7 @@ program are stored here, to be called later.
 
 '''
 import pandas as pd
+from pathlib import Path
 import ast
 
 
@@ -61,9 +62,10 @@ SUBCLASSES = [
     ['Wild Magic','Draconic Bloodline','Storm Sorcery','Shadow Magic'],
     ['Fiend','Great Old One','Archfey','Hexblade'],
     ['Abjuration','Evocation','Necromancy','Conjuration','Enchantment','Divination','Illusion','Transmutation','Bladesinging']
-        ]
+]
 
 ## Converter functions for the lists
+rand_direct = Path(__file__).resolve().parents[1]
 def convert_string_to_list(value):
    
     new_c = value.copy()
@@ -76,9 +78,11 @@ def convert_string_to_list(value):
     return (new_c)
 
 
-spell_list_str= pd.read_excel('lists/bg3_spell_list_clean.xlsx',index_col=0)
+spell_list_str= pd.read_csv(f'{rand_direct}/lists/bg3_spell_list_clean.csv',index_col=0)
+spell_list_str.columns = [f"SL{x}" for x in spell_list_str.columns]
 SPELL_LIST = spell_list_str.apply(lambda x: convert_string_to_list(x),axis = 0)
 
-random_features_str = pd.read_excel('lists/bg3_choice_list_clean.xlsx',index_col=0)
+
+random_features_str = pd.read_csv(f'{rand_direct}/lists/bg3_choice_list_clean.csv',index_col=0)
 random_features_str['Choice'] = convert_string_to_list(random_features_str.Choice)
 RANDOM_FEATURES = random_features_str.copy()

@@ -1,0 +1,550 @@
+Class,Name,Level
+Bard,Blade Ward Blade Ward,C
+Bard,Dancing Lights Dancing Lights,C
+Bard,Friends Friends,C
+Bard,Light Light,C
+Bard,Mage Hand Mage Hand,C
+Bard,Minor Illusion Minor Illusion,C
+Bard,True Strike True Strike,C
+Bard,Vicious Mockery Vicious Mockery,C
+Bard,Animal Friendship Animal Friendship,1
+Bard,Bane Bane,1
+Bard,Charm Person Charm Person,1
+Bard,Cure Wounds Cure Wounds,1
+Bard,Disguise Self Disguise Self,1
+Bard,Dissonant Whispers Dissonant Whispers,1
+Bard,Faerie Fire Faerie Fire,1
+Bard,Feather Fall Feather Fall,1
+Bard,Healing Word Healing Word,1
+Bard,Heroism Heroism,1
+Bard,Longstrider Longstrider,1
+Bard,Sleep Sleep,1
+Bard,Speak with Animals Speak with Animals,1
+Bard,Tasha's Hideous Laughter Tasha's Hideous Laughter,1
+Bard,Thunderwave Thunderwave,1
+Bard,Blindness Blindness,2
+Bard,Calm Emotions Calm Emotions,2
+Bard,Cloud of Daggers Cloud of Daggers,2
+Bard,Crown of Madness Crown of Madness,2
+Bard,Detect Thoughts Detect Thoughts,2
+Bard,Enhance Ability Enhance Ability,2
+Bard,Enthrall Enthrall,2
+Bard,Heat Metal Heat Metal,2
+Bard,Hold Person Hold Person,2
+Bard,Invisibility Invisibility,2
+Bard,Knock Knock,2
+Bard,Lesser Restoration Lesser Restoration,2
+Bard,Phantasmal Force Phantasmal Force,2
+Bard,See Invisibility See Invisibility,2
+Bard,Shatter Shatter,2
+Bard,Silence Silence,2
+Bard,Bestow Curse Bestow Curse,3
+Bard,Fear Fear,3
+Bard,Feign Death Feign Death,3
+Bard,Glyph of Warding Glyph of Warding,3
+Bard,Hypnotic Pattern Hypnotic Pattern,3
+Bard,Plant Growth Plant Growth,3
+Bard,Speak with Dead Speak with Dead,3
+Bard,Stinking Cloud Stinking Cloud,3
+Bard,Confusion Confusion,4
+Bard,Dimension Door Dimension Door,4
+Bard,Freedom of Movement Freedom of Movement,4
+Bard,Greater Invisibility Greater Invisibility,4
+Bard,Polymorph Polymorph,4
+Bard,Dominate Person Dominate Person,5
+Bard,Greater Restoration Greater Restoration,5
+Bard,Hold Monster Hold Monster,5
+Bard,Mass Cure Wounds Mass Cure Wounds,5
+Bard,Planar Binding Planar Binding,5
+Bard,Seeming Seeming,5
+Bard,Eyebite Eyebite,6
+Bard,Otto's Irresistible Dance Otto's Irresistible Dance,6
+Cleric,Blade Ward Blade Ward,C
+Cleric,Bursting Sinew Bursting Sinew,C
+Cleric,Guidance Guidance,C
+Cleric,Light Light,C
+Cleric,Produce Flame Produce Flame,C
+Cleric,Resistance Resistance,C
+Cleric,Sacred Flame Sacred Flame,C
+Cleric,Thaumaturgy Thaumaturgy,C
+Cleric,Toll the Dead Toll the Dead,C
+Cleric,Bane Bane,1
+Cleric,Bless Bless,1
+Cleric,Command Command,1
+Cleric,Create or Destroy Water Create or Destroy Water,1
+Cleric,Cure Wounds Cure Wounds,1
+Cleric,Guiding Bolt Guiding Bolt,1
+Cleric,Healing Word Healing Word,1
+Cleric,Inflict Wounds Inflict Wounds,1
+Cleric,Protection from Evil and Good Protection from Evil and Good,1
+Cleric,Sanctuary Sanctuary,1
+Cleric,Shield of Faith Shield of Faith,1
+Cleric,Aid Aid,2
+Cleric,Blindness Blindness,2
+Cleric,Calm Emotions Calm Emotions,2
+Cleric,Enhance Ability Enhance Ability,2
+Cleric,Hold Person Hold Person,2
+Cleric,Lesser Restoration Lesser Restoration,2
+Cleric,Prayer of Healing Prayer of Healing,2
+Cleric,Protection from Poison Protection from Poison,2
+Cleric,Silence Silence,2
+Cleric,Spiritual Weapon Spiritual Weapon,2
+Cleric,Warding Bond Warding Bond,2
+Cleric,Animate Dead Animate Dead,3
+Cleric,Beacon of Hope Beacon of Hope,3
+Cleric,Bestow Curse Bestow Curse,3
+Cleric,Daylight Daylight,3
+Cleric,Feign Death Feign Death,3
+Cleric,Glyph of Warding Glyph of Warding,3
+Cleric,Mass Healing Word Mass Healing Word,3
+Cleric,Protection from Energy Protection from Energy,3
+Cleric,Remove Curse Remove Curse,3
+Cleric,Revivify Revivify,3
+Cleric,Speak with Dead Speak with Dead,3
+Cleric,Spirit Guardians Spirit Guardians,3
+Cleric,Banishment Banishment,4
+Cleric,Death Ward Death Ward,4
+Cleric,Freedom of Movement Freedom of Movement,4
+Cleric,Guardian of Faith Guardian of Faith,4
+Cleric,Contagion Contagion,5
+Cleric,Destructive Wave Destructive Wave,5
+Cleric,Dispel Evil And Good Dispel Evil And Good,5
+Cleric,Flame Strike Flame Strike,5
+Cleric,Greater Restoration Greater Restoration,5
+Cleric,Insect Plague Insect Plague,5
+Cleric,Mass Cure Wounds Mass Cure Wounds,5
+Cleric,Planar Binding Planar Binding,5
+Cleric,Telekinesis Telekinesis,5
+Cleric,Blade Barrier Blade Barrier,6
+Cleric,Create Undead Create Undead,6
+Cleric,Harm Harm,6
+Cleric,Heal Heal,6
+Cleric,Heroes' Feast Heroes' Feast,6
+Cleric,Planar Ally Planar Ally,6
+Druid,Guidance Guidance,C
+Druid,Poison Spray Poison Spray,C
+Druid,Produce Flame Produce Flame,C
+Druid,Resistance Resistance,C
+Druid,Shillelagh Shillelagh,C
+Druid,Thorn Whip Thorn Whip,C
+Druid,Animal Friendship Animal Friendship,1
+Druid,Charm Person Charm Person,1
+Druid,Create or Destroy Water Create or Destroy Water,1
+Druid,Cure Wounds Cure Wounds,1
+Druid,Enhance Leap Enhance Leap,1
+Druid,Entangle Entangle,1
+Druid,Faerie Fire Faerie Fire,1
+Druid,Fog Cloud Fog Cloud,1
+Druid,Goodberry Goodberry,1
+Druid,Healing Word Healing Word,1
+Druid,Ice Knife Ice Knife,1
+Druid,Longstrider Longstrider,1
+Druid,Speak with Animals Speak with Animals,1
+Druid,Thunderwave Thunderwave,1
+Druid,Barkskin Barkskin,2
+Druid,Darkvision Darkvision,2
+Druid,Enhance Ability Enhance Ability,2
+Druid,Flame Blade Flame Blade,2
+Druid,Flaming Sphere Flaming Sphere,2
+Druid,Gust of Wind Gust of Wind,2
+Druid,Heat Metal Heat Metal,2
+Druid,Hold Person Hold Person,2
+Druid,Lesser Restoration Lesser Restoration,2
+Druid,Moonbeam Moonbeam,2
+Druid,Pass Without Trace Pass Without Trace,2
+Druid,Protection from Poison Protection from Poison,2
+Druid,Spike Growth Spike Growth,2
+Druid,Call Lightning Call Lightning,3
+Druid,Daylight Daylight,3
+Druid,Feign Death Feign Death,3
+Druid,Plant Growth Plant Growth,3
+Druid,Protection from Energy Protection from Energy,3
+Druid,Sleet Storm Sleet Storm,3
+Druid,Blight Blight,4
+Druid,Confusion Confusion,4
+Druid,Conjure Minor Elemental Conjure Minor Elemental,4
+Druid,Conjure Woodland Being Conjure Woodland Being,4
+Druid,Dominate Beast Dominate Beast,4
+Druid,Freedom of Movement Freedom of Movement,4
+Druid,Grasping Vine Grasping Vine,4
+Druid,Ice Storm Ice Storm,4
+Druid,Polymorph Polymorph,4
+Druid,Stoneskin Stoneskin,4
+Druid,Wall of Fire Wall of Fire,4
+Druid,Conjure Elemental Conjure Elemental,5
+Druid,Contagion Contagion,5
+Druid,Greater Restoration Greater Restoration,5
+Druid,Insect Plague Insect Plague,5
+Druid,Mass Cure Wounds Mass Cure Wounds,5
+Druid,Planar Binding Planar Binding,5
+Druid,Wall of Stone Wall of Stone,5
+Druid,Heal Heal,6
+Druid,Heroes' Feast Heroes' Feast,6
+Druid,Sunbeam Sunbeam,6
+Druid,Wall of Thorns Wall of Thorns,6
+Druid,Wind Walk Wind Walk,6
+Paladin,Bless Bless,1
+Paladin,Command Command,1
+Paladin,Compelled Duel Compelled Duel,1
+Paladin,Cure Wounds Cure Wounds,1
+Paladin,Divine Favour Divine Favour,1
+Paladin,Heroism Heroism,1
+Paladin,Protection from Evil and Good Protection from Evil and Good,1
+Paladin,Searing Smite Searing Smite,1
+Paladin,Shield of Faith Shield of Faith,1
+Paladin,Thunderous Smite Thunderous Smite,1
+Paladin,Wrathful Smite Wrathful Smite,1
+Paladin,Aid Aid,2
+Paladin,Branding Smite Branding Smite,2
+Paladin,Lesser Restoration Lesser Restoration,2
+Paladin,Magic Weapon Magic Weapon,2
+Paladin,Protection from Poison Protection from Poison,2
+Paladin,Blinding Smite Blinding Smite,3
+Paladin,Crusader's Mantle Crusader's Mantle,3
+Paladin,Daylight Daylight,3
+Paladin,Elemental Weapon Elemental Weapon,3
+Paladin,Remove Curse Remove Curse,3
+Paladin,Revivify Revivify,3
+Paladin,Warden of Vitality Warden of Vitality,3
+Paladin,Banishment Banishment,4
+Paladin,Death Ward Death Ward,4
+Paladin,Staggering Smite Staggering Smite,4
+Paladin,Banishing Smite Banishing Smite,5
+Paladin,Destructive Wave Destructive Wave,5
+Ranger,Animal Friendship Animal Friendship,1
+Ranger,Cure Wounds Cure Wounds,1
+Ranger,Enhance Leap Enhance Leap,1
+Ranger,Ensnaring Strike Ensnaring Strike,1
+Ranger,Fog Cloud Fog Cloud,1
+Ranger,Goodberry Goodberry,1
+Ranger,Hail of Thorns Hail of Thorns,1
+Ranger,Hunter's Mark Hunter's Mark,1
+Ranger,Longstrider Longstrider,1
+Ranger,Speak with Animals Speak with Animals,1
+Ranger,Barkskin Barkskin,2
+Ranger,Darkvision Darkvision,2
+Ranger,Lesser Restoration Lesser Restoration,2
+Ranger,Pass Without Trace Pass Without Trace,2
+Ranger,Protection from Poison Protection from Poison,2
+Ranger,Silence Silence,2
+Ranger,Spike Growth Spike Growth,2
+Ranger,Conjure Barrage Conjure Barrage,3
+Ranger,Daylight Daylight,3
+Ranger,Lightning Arrow Lightning Arrow,3
+Ranger,Plant Growth Plant Growth,3
+Ranger,Protection from Energy Protection from Energy,3
+,,
+Sorcerer,Acid Splash Acid Splash,C
+Sorcerer,Blade Ward Blade Ward,C
+Sorcerer,Bone Chill Bone Chill,C
+Sorcerer,Booming Blade Booming Blade,C
+Sorcerer,Bursting Sinew Bursting Sinew,C
+Sorcerer,Dancing Lights Dancing Lights,C
+Sorcerer,Fire Bolt Fire Bolt,C
+Sorcerer,Friends Friends,C
+Sorcerer,Light Light,C
+Sorcerer,Mage Hand Mage Hand,C
+Sorcerer,Minor Illusion Minor Illusion,C
+Sorcerer,Poison Spray Poison Spray,C
+Sorcerer,Ray of Frost Ray of Frost,C
+Sorcerer,Shocking Grasp Shocking Grasp,C
+Sorcerer,True Strike True Strike,C
+Sorcerer,Burning Hands Burning Hands,1
+Sorcerer,Charm Person Charm Person,1
+Sorcerer,Chromatic Orb Chromatic Orb,1
+Sorcerer,Colour Spray Colour Spray,1
+Sorcerer,Disguise Self Disguise Self,1
+Sorcerer,Enhance Leap Enhance Leap,1
+Sorcerer,Expeditious Retreat Expeditious Retreat,1
+Sorcerer,False Life False Life,1
+Sorcerer,Feather Fall Feather Fall,1
+Sorcerer,Fog Cloud Fog Cloud,1
+Sorcerer,Ice Knife Ice Knife,1
+Sorcerer,Mage Armour Mage Armour,1
+Sorcerer,Magic Missile Magic Missile,1
+Sorcerer,Ray of Sickness Ray of Sickness,1
+Sorcerer,Shield Shield,1
+Sorcerer,Sleep Sleep,1
+Sorcerer,Thunderwave Thunderwave,1
+Sorcerer,Witch Bolt Witch Bolt,1
+Sorcerer,Blindness Blindness,2
+Sorcerer,Blur Blur,2
+Sorcerer,Cloud of Daggers Cloud of Daggers,2
+Sorcerer,Crown of Madness Crown of Madness,2
+Sorcerer,Darkness Darkness,2
+Sorcerer,Darkvision Darkvision,2
+Sorcerer,Detect Thoughts Detect Thoughts,2
+Sorcerer,Enhance Ability Enhance Ability,2
+Sorcerer,Enlarge/Reduce Enlarge/Reduce,2
+Sorcerer,Gust of Wind Gust of Wind,2
+Sorcerer,Hold Person Hold Person,2
+Sorcerer,Invisibility Invisibility,2
+Sorcerer,Knock Knock,2
+Sorcerer,Mirror Image Mirror Image,2
+Sorcerer,Misty Step Misty Step,2
+Sorcerer,Phantasmal Force Phantasmal Force,2
+Sorcerer,Scorching Ray Scorching Ray,2
+Sorcerer,See Invisibility See Invisibility,2
+Sorcerer,Shadow Blade Shadow Blade,2
+Sorcerer,Shatter Shatter,2
+Sorcerer,Web Web,2
+Sorcerer,Blink Blink,3
+Sorcerer,Counterspell Counterspell,3
+Sorcerer,Daylight Daylight,3
+Sorcerer,Fear Fear,3
+Sorcerer,Fireball Fireball,3
+Sorcerer,Gaseous Form Gaseous Form,3
+Sorcerer,Grant Flight Grant Flight,3
+Sorcerer,Haste Haste,3
+Sorcerer,Hypnotic Pattern Hypnotic Pattern,3
+Sorcerer,Lightning Bolt Lightning Bolt,3
+Sorcerer,Protection from Energy Protection from Energy,3
+Sorcerer,Sleet Storm Sleet Storm,3
+Sorcerer,Slow Slow,3
+Sorcerer,Stinking Cloud Stinking Cloud,3
+Sorcerer,Banishment Banishment,4
+Sorcerer,Blight Blight,4
+Sorcerer,Confusion Confusion,4
+Sorcerer,Dimension Door Dimension Door,4
+Sorcerer,Dominate Beast Dominate Beast,4
+Sorcerer,Greater Invisibility Greater Invisibility,4
+Sorcerer,Ice Storm Ice Storm,4
+Sorcerer,Polymorph Polymorph,4
+Sorcerer,Stoneskin Stoneskin,4
+Sorcerer,Wall of Fire Wall of Fire,4
+Sorcerer,Cloudkill Cloudkill,5
+Sorcerer,Cone of Cold Cone of Cold,5
+Sorcerer,Dominate Person Dominate Person,5
+Sorcerer,Hold Monster Hold Monster,5
+Sorcerer,Insect Plague Insect Plague,5
+Sorcerer,Seeming Seeming,5
+Sorcerer,Telekinesis Telekinesis,5
+Sorcerer,Wall of Stone Wall of Stone,5
+Sorcerer,Arcane Gate Arcane Gate,6
+Sorcerer,Chain Lightning Chain Lightning,6
+Sorcerer,Circle of Death Circle of Death,6
+Sorcerer,Disintegrate Disintegrate,6
+Sorcerer,Eyebite Eyebite,6
+Sorcerer,Globe of Invulnerability Globe of Invulnerability,6
+Sorcerer,Sunbeam Sunbeam,6
+Warlock,Blade Ward Blade Ward,C
+Warlock,Bone Chill Bone Chill,C
+Warlock,Booming Blade Booming Blade,C
+Warlock,Eldritch Blast Eldritch Blast,C
+Warlock,Friends Friends,C
+Warlock,Mage Hand Mage Hand,C
+Warlock,Minor Illusion Minor Illusion,C
+Warlock,Poison Spray Poison Spray,C
+Warlock,Toll the Dead Toll the Dead,C
+Warlock,True Strike True Strike,C
+Warlock,Armour of Agathys Armour of Agathys,1
+Warlock,Arms of Hadar Arms of Hadar,1
+Warlock,Charm Person Charm Person,1
+Warlock,Expeditious Retreat Expeditious Retreat,1
+Warlock,Hellish Rebuke Hellish Rebuke,1
+Warlock,Hex Hex,1
+Warlock,Protection from Evil and Good Protection from Evil and Good,1
+Warlock,Witch Bolt Witch Bolt,1
+Warlock,Cloud of Daggers Cloud of Daggers,2
+Warlock,Crown of Madness Crown of Madness,2
+Warlock,Darkness Darkness,2
+Warlock,Enthrall Enthrall,2
+Warlock,Hold Person Hold Person,2
+Warlock,Invisibility Invisibility,2
+Warlock,Mirror Image Mirror Image,2
+Warlock,Misty Step Misty Step,2
+Warlock,Ray of Enfeeblement Ray of Enfeeblement,2
+Warlock,Shadow Blade Shadow Blade,2
+Warlock,Shatter Shatter,2
+Warlock,Counterspell Counterspell,3
+Warlock,Fear Fear,3
+Warlock,Gaseous Form Gaseous Form,3
+Warlock,Grant Flight Grant Flight,3
+Warlock,Hunger of Hadar Hunger of Hadar,3
+Warlock,Hypnotic Pattern Hypnotic Pattern,3
+Warlock,Remove Curse Remove Curse,3
+Warlock,Vampiric Touch Vampiric Touch,3
+Warlock,Banishment Banishment,4
+Warlock,Blight Blight,4
+Warlock,Dimension Door Dimension Door,4
+Warlock,Hold Monster Hold Monster,5
+Warlock,Arcane Gate Arcane Gate,6
+Warlock,Circle of Death Circle of Death,6
+Warlock,Create Undead Create Undead,6
+Warlock,Eyebite Eyebite,6
+Warlock,Flesh to Stone Flesh to Stone,6
+Wizard,Acid Splash Acid Splash,C
+Wizard,Blade Ward Blade Ward,C
+Wizard,Bone Chill Bone Chill,C
+Wizard,Booming Blade Booming Blade,C
+Wizard,Bursting Sinew Bursting Sinew,C
+Wizard,Dancing Lights Dancing Lights,C
+Wizard,Fire Bolt Fire Bolt,C
+Wizard,Friends Friends,C
+Wizard,Light Light,C
+Wizard,Mage Hand Mage Hand,C
+Wizard,Minor Illusion Minor Illusion,C
+Wizard,Poison Spray Poison Spray,C
+Wizard,Ray of Frost Ray of Frost,C
+Wizard,Shocking Grasp Shocking Grasp,C
+Wizard,Toll the Dead Toll the Dead,C
+Wizard,True Strike True Strike,C
+Wizard,Burning Hands Burning Hands,1
+Wizard,Charm Person Charm Person,1
+Wizard,Chromatic Orb Chromatic Orb,1
+Wizard,Colour Spray Colour Spray,1
+Wizard,Disguise Self Disguise Self,1
+Wizard,Enhance Leap Enhance Leap,1
+Wizard,Expeditious Retreat Expeditious Retreat,1
+Wizard,False Life False Life,1
+Wizard,Feather Fall Feather Fall,1
+Wizard,Find Familiar Find Familiar,1
+Wizard,Fog Cloud Fog Cloud,1
+Wizard,Grease Grease,1
+Wizard,Ice Knife Ice Knife,1
+Wizard,Longstrider Longstrider,1
+Wizard,Mage Armour Mage Armour,1
+Wizard,Magic Missile Magic Missile,1
+Wizard,Protection from Evil and Good Protection from Evil and Good,1
+Wizard,Ray of Sickness Ray of Sickness,1
+Wizard,Shield Shield,1
+Wizard,Sleep Sleep,1
+Wizard,Tasha's Hideous Laughter Tasha's Hideous Laughter,1
+Wizard,Thunderwave Thunderwave,1
+Wizard,Witch Bolt Witch Bolt,1
+Wizard,Arcane Lock Arcane Lock,2
+Wizard,Blindness Blindness,2
+Wizard,Blur Blur,2
+Wizard,Cloud of Daggers Cloud of Daggers,2
+Wizard,Crown of Madness Crown of Madness,2
+Wizard,Darkness Darkness,2
+Wizard,Darkvision Darkvision,2
+Wizard,Detect Thoughts Detect Thoughts,2
+Wizard,Enlarge/Reduce Enlarge/Reduce,2
+Wizard,Flaming Sphere Flaming Sphere,2
+Wizard,Gust of Wind Gust of Wind,2
+Wizard,Hold Person Hold Person,2
+Wizard,Invisibility Invisibility,2
+Wizard,Knock Knock,2
+Wizard,Magic Weapon Magic Weapon,2
+Wizard,Melf's Acid Arrow Melf's Acid Arrow,2
+Wizard,Mirror Image Mirror Image,2
+Wizard,Misty Step Misty Step,2
+Wizard,Phantasmal Force Phantasmal Force,2
+Wizard,Ray of Enfeeblement Ray of Enfeeblement,2
+Wizard,Scorching Ray Scorching Ray,2
+Wizard,See Invisibility See Invisibility,2
+Wizard,Shadow Blade Shadow Blade,2
+Wizard,Shatter Shatter,2
+Wizard,Web Web,2
+Wizard,Animate Dead Animate Dead,3
+Wizard,Bestow Curse Bestow Curse,3
+Wizard,Blink Blink,3
+Wizard,Counterspell Counterspell,3
+Wizard,Fear Fear,3
+Wizard,Feign Death Feign Death,3
+Wizard,Fireball Fireball,3
+Wizard,Gaseous Form Gaseous Form,3
+Wizard,Glyph of Warding Glyph of Warding,3
+Wizard,Grant Flight Grant Flight,3
+Wizard,Haste Haste,3
+Wizard,Hypnotic Pattern Hypnotic Pattern,3
+Wizard,Lightning Bolt Lightning Bolt,3
+Wizard,Protection from Energy Protection from Energy,3
+Wizard,Remove Curse Remove Curse,3
+Wizard,Sleet Storm Sleet Storm,3
+Wizard,Slow Slow,3
+Wizard,Stinking Cloud Stinking Cloud,3
+Wizard,Vampiric Touch Vampiric Touch,3
+Wizard,Banishment Banishment,4
+Wizard,Blight Blight,4
+Wizard,Confusion Confusion,4
+Wizard,Conjure Minor Elemental Conjure Minor Elemental,4
+Wizard,Dimension Door Dimension Door,4
+Wizard,Evard's Black Tentacles Evard's Black Tentacles,4
+Wizard,Fire Shield Fire Shield,4
+Wizard,Greater Invisibility Greater Invisibility,4
+Wizard,Ice Storm Ice Storm,4
+Wizard,Otiluke's Resilient Sphere Otiluke's Resilient Sphere,4
+Wizard,Phantasmal Killer Phantasmal Killer,4
+Wizard,Polymorph Polymorph,4
+Wizard,Stoneskin Stoneskin,4
+Wizard,Wall of Fire Wall of Fire,4
+Wizard,Cloudkill Cloudkill,5
+Wizard,Cone of Cold Cone of Cold,5
+Wizard,Conjure Elemental Conjure Elemental,5
+Wizard,Dominate Person Dominate Person,5
+Wizard,Hold Monster Hold Monster,5
+Wizard,Planar Binding Planar Binding,5
+Wizard,Seeming Seeming,5
+Wizard,Telekinesis Telekinesis,5
+Wizard,Wall of Stone Wall of Stone,5
+Wizard,Arcane Gate Arcane Gate,6
+Wizard,Chain Lightning Chain Lightning,6
+Wizard,Circle of Death Circle of Death,6
+Wizard,Create Undead Create Undead,6
+Wizard,Disintegrate Disintegrate,6
+Wizard,Eyebite Eyebite,6
+Wizard,Flesh to Stone Flesh to Stone,6
+Wizard,Globe of Invulnerability Globe of Invulnerability,6
+Wizard,Otiluke's Freezing Sphere Otiluke's Freezing Sphere,6
+Wizard,Otto's Irresistible Dance Otto's Irresistible Dance,6
+Wizard,Sunbeam Sunbeam,6
+Wizard,Wall of Ice Wall of Ice,6
+Arcane Trickster,Acid Splash Acid Splash,C
+Arcane Trickster,Blade Ward Blade Ward,C
+Arcane Trickster,Bone Chill Bone Chill,C
+Arcane Trickster,Booming Blade Booming Blade,C
+Arcane Trickster,Bursting Sinew Bursting Sinew,C
+Arcane Trickster,Dancing Lights Dancing Lights,C
+Arcane Trickster,Fire Bolt Fire Bolt,C
+Arcane Trickster,Friends Friends,C
+Arcane Trickster,Light Light,C
+Arcane Trickster,Minor Illusion Minor Illusion,C
+Arcane Trickster,Poison Spray Poison Spray,C
+Arcane Trickster,Ray of Frost Ray of Frost,C
+Arcane Trickster,Shocking Grasp Shocking Grasp,C
+Arcane Trickster,Toll the Dead Toll the Dead,C
+Arcane Trickster,True Strike True Strike,C
+Arcane Trickster,Charm Person Charm Person,1
+Arcane Trickster,Colour Spray Colour Spray,1
+Arcane Trickster,Disguise Self Disguise Self,1
+Arcane Trickster,Sleep Sleep,1
+Arcane Trickster,Tasha's Hideous Laughter Tasha's Hideous Laughter,1
+Arcane Trickster,Blur Blur,2
+Arcane Trickster,Crown of Madness Crown of Madness,2
+Arcane Trickster,Hold Person Hold Person,2
+Arcane Trickster,Invisibility Invisibility,2
+Arcane Trickster,Mirror Image Mirror Image,2
+Arcane Trickster,Phantasmal Force Phantasmal Force,2
+Arcane Trickster,Shadow Blade Shadow Blade,2
+Eldritch Knight,Acid Splash Acid Splash,C
+Eldritch Knight,Blade Ward Blade Ward,C
+Eldritch Knight,Bone Chill Bone Chill,C
+Eldritch Knight,Booming Blade Booming Blade,C
+Eldritch Knight,Bursting Sinew Bursting Sinew,C
+Eldritch Knight,Dancing Lights Dancing Lights,C
+Eldritch Knight,Fire Bolt Fire Bolt,C
+Eldritch Knight,Friends Friends,C
+Eldritch Knight,Light Light,C
+Eldritch Knight,Mage Hand Mage Hand,C
+Eldritch Knight,Minor Illusion Minor Illusion,C
+Eldritch Knight,Poison Spray Poison Spray,C
+Eldritch Knight,Ray of Frost Ray of Frost,C
+Eldritch Knight,Shocking Grasp Shocking Grasp,C
+Eldritch Knight,Toll the Dead Toll the Dead,C
+Eldritch Knight,True Strike True Strike,C
+Eldritch Knight,Burning Hands Burning Hands,1
+Eldritch Knight,Chromatic Orb Chromatic Orb,1
+Eldritch Knight,Mage Armour Mage Armour,1
+Eldritch Knight,Magic Missile Magic Missile,1
+Eldritch Knight,Protection from Evil and Good Protection from Evil and Good,1
+Eldritch Knight,Shield Shield,1
+Eldritch Knight,Thunderwave Thunderwave,1
+Eldritch Knight,Witch Bolt Witch Bolt,1
+Eldritch Knight,Arcane Lock Arcane Lock,2
+Eldritch Knight,Darkness Darkness,2
+Eldritch Knight,Gust of Wind Gust of Wind,2
+Eldritch Knight,Melf's Acid Arrow Melf's Acid Arrow,2
+Eldritch Knight,Scorching Ray Scorching Ray,2
+Eldritch Knight,Shatter Shatter,2
